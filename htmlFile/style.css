@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .btn {
+    width: 10em;
+    height: 3em;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: 2px solid #bdbdbd;
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: 300;
+    color: #3f3f3f;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    color: rgb(114, 114, 114);
+  }
+  
+  .container {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .close {
+    overflow: hidden;
+  }
+  
+  .close::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .top {
+    display: block;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border: 3px solid #bdbdbd;
+    border-radius: 2px;
+    background: #efefef;
+  }
+  
+  .top h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.75em;
+  }
+  
+  .columns {
+    display: block;
+    width: 100%;
+    padding: 30px 45px;
+  }
+  
+  .columns .column_1 {
+    width: 15em;
+    height: auto;
+    padding: 20px;
+    border: 3px solid #bdbdbd;
+    border-radius: 2px;
+    background: #efefef;
+    float: left;
+    margin-right: 3em;
+  }
+  
+  .columns .column_1 h3 {
+    margin: 0px 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  
+  .columns .column_1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.85em 2em;
+  }
+  
+  .columns .column_1 ul li {
+    padding: 5px;
+    list-style: square;
+  }
+  
+  .row {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .row .article {
+    display: inline;
+   
+    margin-right: 2em;
+    padding: 0px;
+    overflow: hidden;
+  }
+  
+  .row .column_4 .btn {
+    box-sizing: border-box;
+  }
+  
+  .row:last-of-type {
+    margin-bottom: 1.75em;
+  }
+  
+  .row .article .input {
+    width: 94%;
+    height: 3em;
+    margin-top: 0.9em;
+    padding: 1px 15px;
+    background: #efefef;
+    border: 2px solid #bdbdbd;
+    border-radius: 2px;
+  }
+  
+  .row .article .in {
+    width: 60%;
+    float: left;
+    margin-right: 1.2em;
+  }
+  
+  .row .article .artist_id {
+    width: 25%;
+    height: 3em;
+    margin-top: 0.9em;
+    padding: 1px 15px;
+    background: #efefef;
+    border: 2px solid #bdbdbd;
+    border-radius: 2px;
+    margin-right: 0px;
+  }
+  
+  .row .article .artist_id {
+    float: right;
+  }
+  
+  .sort {
+    display: block;
+    padding: 0px;
+  }
+  

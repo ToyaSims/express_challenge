@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2>HOUSE</h2>
+      </div>
+
+      <div class="columns">
+        <div class="column_1">
+          <div class="card">
+            <h3>List Of Musicians</h3>
+            <ul id="list">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="column_2">
+          <div class="contents">
+            <div class="row">
+              <div class="article">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter musician name"
+                />
+              </div>
+
+              <div class="column_4">
+                <div class="add">
+                  <button class="btn btn_add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="article">
+                <input
+                  type="text"
+                  class="input in"
+                  placeholder="Enter new musician name"
+                />
+                <input
+                  type="text"
+                  class="artist_id"
+                  placeholder="ID - musician you want to change"
+                />
+              </div>
+              <div class="column_4">
+                <div class="edit">
+                  <button class="btn btn_edit">Edit</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="article">
+                <input
+                  type="text"
+                  class="artist_id input_delete"
+                  placeholder="ID - musician you want to delete"
+                />
+              </div>
+              <div class="column_4">
+                <div class="delete">
+                  <button class="btn btn_delete">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sort">
+            <button class="btn btn_sort">Sort List</button>
+          </div>
+        </div>
+        <div class="close"></div>
+      </div>
+    </div>
+
+    <script type="type/javascript">
+      const location = "localhost/3090"
+
+      const fetch = async ()=>{
+          const request = await fetch(${location}/api/get/)
+          const response = await request.json();
+
+          for(var i = 0;i< response.artists.length;i++){
+              document.getElementById.("list").innerHTML += response.artists[i].name;
+          }
+      }
+    </script>
+  </body>
+</html>
